@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+   <link rel="icon" href="/image/brosone.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gaming Desktop — BROS</title>
+  <link rel="stylesheet" href="/css/business_game.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="vignette"></div>
+
+  <div class="desktop" id="desktop">
+    <div class="dock">
+      <div class="logo">G</div>
+      <div class="icons">
+        <div class="icon" data-app="launcher">🎮</div>
+        <div class="icon" data-app="stats">📈</div>
+        <div class="icon" data-app="chat">💬</div>
+        <div class="icon" data-app="music">🎧</div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="hero">
+        <div class="title"><h1>Gaming Desktop — Quick Launch</h1><div style="margin-left:8px;color:var(--muted);font-size:13px">Welcome, Player</div></div>
+        <div class="quick-launch">
+          <div class="ql" data-app="launcher">Open Launcher</div>
+          <div class="ql" data-app="stats">System Stats</div>
+          <div class="ql" data-app="chat">Open Chat</div>
+        </div>
+        <div style="margin-top:18px"><small style="color:var(--muted)">Recent games</small>
+          <div style="margin-top:10px" class="games-grid">
+            <div class="game"><div class="gthumb">R</div><strong>Riftblade</strong><small>Action · 2024</small></div>
+            <div class="game"><div class="gthumb">N</div><strong>Neon Drift</strong><small>Racing · 2023</small></div>
+            <div class="game"><div class="gthumb">A</div><strong>AstroCraft</strong><small>Strategy · 2025</small></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="widgets">
+      <div class="widget">
+        <h4>Now Playing</h4>
+        <div style="display:flex;gap:12px;align-items:center"><div style="width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--neon-pink),var(--neon-cyan));display:flex;align-items:center;justify-content:center">♪</div>
+        <div><strong id="track">No track</strong><div style="color:var(--muted);font-size:13px">—</div></div></div>
+      </div>
+      <div class="widget">
+        <h4>Quick System</h4>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div><small style="color:var(--muted)">CPU</small><div class="bar"><div id="cpuBar" class="bar-inner" style="width:26%"></div></div></div>
+          <div><small style="color:var(--muted)">RAM</small><div class="bar"><div id="ramBar" class="bar-inner" style="width:45%"></div></div></div>
+          <div><small style="color:var(--muted)">GPU</small><div class="bar"><div id="gpuBar" class="bar-inner" style="width:14%"></div></div></div>
+        </div>
+      </div>
+      <div class="widget pulse" style="text-align:center">GAMING MODE: <strong style="color:var(--neon-pink)">ON</strong></div>
+    </div>
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:8px"><div style="width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--neon-pink),var(--neon-cyan));display:flex;align-items:center;justify-content:center">G</div>
+      <div><strong>Gamer</strong><div style="color:var(--muted);font-size:13px">Quick launch panel</div></div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><div class="ql" data-app="launcher">Launcher</div><div class="ql" data-app="chat">Chat</div><div class="ql" data-app="settings">Settings</div></div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar" id="taskbar">
+      <div class="tb-left"><div class="tb-start" id="startBtn">☰</div><div class="tb-icons" id="tbIcons"></div></div>
+      <div class="tb-right" id="tbRight">🕒 <span id="time">--:--</span> &nbsp; | &nbsp; GPU: 14%</div>
+    </div>
+
+  </div>
+
+  <script src="/js/business_game.js">
+    
+  </script>
+</body>
+</html>
+

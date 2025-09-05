@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" href="/image/brosone.png">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Retail - Bros One Tech</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/Retail.css">
+<style>
+  
+</style>
+</head>
+<body>
+
+<!-- header -->
+<header class="site-header">
+  <div class="brand"><p><img src="/image/brosone.png" width="40px" height="40px" alt=""></p>
+    <!-- <div class="logo"></div> -->
+    Bros One Tech
+    
+  </div>
+  <nav>
+    <a href="index.html">Home</a><a href="products.html">Products</a><a href="pricing.html">Pricing</a>
+  </nav>
+  <div class="nav-right">
+    <input id="quickSearchTop" style="padding:8px 10px;border-radius:10px;border:none;outline:none" placeholder="Quick search..." />
+  </div>
+</header>
+
+<main class="page">
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Retail Solutions — Curated for your store</h1>
+      <p>Discover curated hardware & accessories optimized for POS — reliable devices tested with V–PoS.</p>
+    </div>
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1545235617-9465a77a0b9f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3ed0d6a8b1d5f477b6c6c5b4e111b1ef" alt="retail" />
+    </div>
+  </section>
+
+  <!-- filters -->
+  <div class="filters">
+    <div class="search">
+      <svg width="16" height="16" style="opacity:.9" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 21l-4.35-4.35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle></svg>
+      <input id="searchInput" placeholder="Search products, SKU or category..." />
+    </div>
+
+    <select id="categoryFilter" class="select">
+      <option value="">All Categories</option>
+      <option value="Hardware">Hardware</option>
+      <option value="Accessories">Accessories</option>
+      <option value="Cables">Cables</option>
+    </select>
+
+    <div class="price-range">
+      <div class="select">Max ₹<span id="priceVal">20000</span></div>
+      <input id="priceRange" class="range" type="range" min="500" max="50000" step="500" value="20000" />
+    </div>
+
+    <select id="sort" class="select">
+      <option value="popular">Sort: Popular</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+    </select>
+  </div>
+
+  <!-- product grid -->
+  <section class="grid" id="productGrid"></section>
+</main>
+
+<!-- cart -->
+<aside class="cart" id="cart">
+  <div class="cart-header">
+    <div><strong>Cart</strong> <small style="color:#7b8aa5">— POS Ready</small></div>
+    <div id="cartCount">0</div>
+  </div>
+  <div class="cart-list" id="cartList">
+    <div class="empty">Your cart is empty — add items to begin</div>
+  </div>
+  <div class="checkout">
+    <div class="total" id="cartTotal">₹0</div>
+    <div>
+      <button class="btn btn-outline" onclick="clearCart()">Clear</button>
+      <button class="btn btn-primary" onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+</aside>
+
+<!-- modal -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" id="productModal">
+    <img id="modalImg" src="" alt="">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:12px">
+      <button class="btn btn-outline" onclick="closeModal()">Close</button>
+      <button class="btn btn-primary" id="modalAddBtn">Add to cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/Retail.js">
+  
+</script>
+</body>
+</html>
+

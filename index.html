@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/image/brosone.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BROS ONE TECH | GST Billing Software</title>
+  <link rel="stylesheet" href="/css/index.css" />
+ 
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><img src="/image/brosone.png" alt="" height="40px" width="40px"> <span>BROS ONE TECH</span></div>
+    <nav>
+      <a href="mobileapp.html">TRY MOBILE APP</a>
+      <a href="#" id="solutionToggle">SOLUTION</a>
+      <a href="pricing.html">PRICING</a>
+      <a href="about.html">ABOUNT US</a>
+      <a href="desktop.html">DESKTOP</a>
+      <a href="careers.html">CAREERS</a>
+      <a href="partner.html">PARTNER WITH US</a>
+      <a href="login.html">LOGIN</a>
+      <style>
+        a { 
+          font-weight: bold;
+          font-family:   sans-serif;
+         }
+      </style>
+      <!-- Dropdown Panel -->
+      <div class="dropdown-panel" id="solutionPanel">
+        <div class="dropdown-content">
+          <div class="column">
+            <h4>Business Management Solutions</h4>
+            <div class="option"><a href="accounting.html">📒 Accounting</a></div>
+            <div class="option"><a href="Inventory.html">📦 Inventory</a></div>
+            <div class="option"><a href="Invoicing.html">🧾 Invoicing</a></div>
+            <div class="option"><a href="pos.html">🛒 POS</a></div>
+            <div class="option"><a href="einvoice.html">📤 E-Invoice</a></div>
+            <div class="option"><a href="ocr.html">🔍 OCR</a></div>
+          </div>
+          <div class="column">
+            <h4>Industry Solution</h4>
+            <div class="option"><a href="Retail.html">🏪 Retail</a></div>
+            <div class="option"><a href="Pharmacy.html">💊 Pharmacy</a></div>
+            <div class="option"><a href="Grocery.html">🛍️ Grocery</a></div>
+            <div class="option"><a href="Restaurant.html">🍽️ Restaurant</a></div>
+            <div class="option"><a href="Jewellery.html">💎 Jewellery</a></div>
+            <div class="option"><a href="Clothing.html">👕 Clothing/Apparel</a></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const solutionToggle = document.getElementById("solutionToggle");
+        const solutionPanel = document.getElementById("solutionPanel");
+        solutionToggle.onclick = (e) => {
+          e.preventDefault();
+          solutionPanel.classList.toggle("visible");
+        };
+        window.addEventListener("click", (e) => {
+          if (!solutionPanel.contains(e.target) && e.target !== solutionToggle) {
+            solutionPanel.classList.remove("visible");
+          }
+        });
+      </script>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>GST Billing Software<br>in India for Small Businesses</h1>
+      <p>Manage your business professionally with <strong>BROS ONE TECH</strong>, India’s trusted billing, inventory, and accounting software. Join 1 Cr+ SMEs who trust us.</p>
+      <button class="download-btn" id="openModal">Download BROS ONE TECH Now!</button>
+    </div>
+    <div class="hero-image">
+      <img src="/image/billing-software.png" height="300px" width="500px" alt="Dashboard UI" />
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-box">
+      <img src="/image/happy_customer-1.webp" alt="Happy Customers" />
+      <h3>1 Crore+</h3>
+      <p>Happy Customers</p>
+    </div>
+    <div class="feature-box">
+      <img src="/image/phone_icon-1.webp"  height="40px" alt="Free App" />
+      <h3>Free</h3>
+      <p>Android Mobile App</p>
+    </div>
+    <div class="feature-box">
+      <img src="/image/gplay_store-2.webp" alt="Rating" />
+      <h3>Rated 4.7/5</h3>
+      <p>On Google Play Store</p>
+    </div>
+    <div class="feature-box">
+      <img src="/image/multi_device-1.webp" alt="Multi Device" />
+      <h3>Multi-Device</h3>
+      <p>Use on Mobile & Desktop</p>
+    </div>
+    <div class="feature-box">
+      <img src="/image/multi_user-1.webp" alt="Multi User" />
+      <h3>Multi-User</h3>
+      <p>User Management Features</p>
+    </div>
+  </section>
+
+  <!-- WHAT WE SERVE Section -->
+  <section class="section">
+    <h2>WHAT WE SERVE</h2>
+    <p>We develop a Ultimate Technological Solutions</p>
+    <div class="card-container">
+        <div class="card">
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/fa314a/cash-register.png" alt="POS">
+            </div>
+            <h3>POINT OF SALE</h3>
+            <p>The point of sale or point of purchase is the time and place at which a retail transaction is completed.</p>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/fa314a/combo-chart.png" alt="ERP">
+            </div>
+            <h3>ERP Solutions Software</h3>
+            <p>ERP is the integrated management of main business processes, often in real-time and mediated by software and technology.</p>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/fa314a/smartphone.png" alt="Mobile App">
+            </div>
+            <h3>Web & Mobile Application</h3>
+            <p>A web application is application software that is accessed using a web browser, developed for use on small and large devices.</p>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="https://img.icons8.com/ios-filled/50/fa314a/online-store.png" alt="Ecom">
+            </div>
+            <h3>E-com Application</h3>
+            <p>Ecommerce website development is the process of developing the technical aspects of your ecommerce website.</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="demoModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>BROS ONE TECH</h2>
+      <h3>Book a Free Demo</h3>
+      <p>Get a demo from your personal account manager 🚀</p>
+      <div class="input-group">
+        <select>
+          <option value="+91">+91 🇮🇳</option>
+        </select>
+        <input type="tel" placeholder="Enter Phone Number" />
+      </div>
+      <button class="book-btn">Book Free Demo</button>
+      <p class="note">⚡ Open the downloaded file to install BROS ONE TECH. Login using your phone number and start using for free.</p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="/image/brosone.png" alt="Bros One Tech Logo" height="40px" width="40px">
+        <span>BROS ONE TECH Software Solutions</span>
+        <p>One of the leading software providers of Cloud Billing Software in Chennai, India.</p>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/people/Bros-One-Tech/61555252529119/" ><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook"></a>
+        <a href="https://www.youtube.com/@BrosOneTech" ><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png" alt="YouTube"></a>
+        <a href="https://www.instagram.com/brosonetech/" ><img src="https://img.icons8.com/ios-filled/50/000000/instagram.png" alt="Instagram"></a>
+      </div>
+      <div class="footer-links">
+        <h4>About</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="pos.html">POINT OF SALE</a></li>
+          <li><a href="erp.html">ERP</a></li>
+          <li><a href="webmobile.html">Web & Mobile</a></li>
+          <li><a href="ecomm.html">E-COMM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-note">
+      <p>&copy; 2025 Bros One Tech. Designed by Brosonetech</p>
+      <div class="footer-policies">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="refund-cancellation.html">Refund & Cancellation Policy</a>
+        <a href="terms&condition.html">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/index.js">
+    
+  </script>
+</body>
+</html>

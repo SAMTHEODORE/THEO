@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/image/brosone.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POS Billing Software | BROS ONE TECH</title>
+  <link rel="stylesheet" href="/css/pos.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">BROS ONE TECH</div>
+    <nav>
+      <a href="index.html">HOME</a>
+      <!-- <a href="#" id="solutionToggle">Solution</a> -->
+      <a href="pricing.html">PRICING</a>
+      <a href="about.html"> ABOUNT US</a>
+      <a href="desktop.html">DESKTOP</a>
+      <a href="partner.html">PARTNER WITH US</a>
+      <a href="login.html">LOGIN</a>
+
+      
+    </nav>
+  </div>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="#">Home</a> › <a href="#">POS Billing Software</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="pos-hero">
+    <div class="pos-content">
+      <span class="tag">BROS ONE TECH</span>
+      <h1>Make a bill in <span class="highlight">30 Seconds!</span></h1>
+      <p>With V–PoS simplify your billing and inventory process.</p>
+      <button class="download-btn">Download For Desktop</button>
+
+      <div class="features-list">
+        <div class="feature-item">
+          <img src="/image/fast-icon-21.jpg" alt="Fast">
+          <div class="feature-text">Fast Checkout Process</div>
+        </div>
+        <div class="feature-item">
+          <img src="/image/pngtree-checklist-line-icon-vector-png-image_6738765.png" alt="Inventory">
+          <div class="feature-text">Inventory Sync</div>
+        </div>
+        <div class="feature-item">
+          <img src="/image/sales-icon-16.jpg" alt="Sales">
+          <div class="feature-text">Sales Reporting</div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="pos-image">
+      <img src="images/pos-desktop.png" alt="POS Desktop Screenshot" />
+    </div> -->
+  </section>
+
+  <!-- Trusted Logos -->
+  <section class="trusted-section">
+    <h3>Trusted By</h3>
+    <div class="trusted-logos">
+      <!-- <img src="images/prestige-logo.png" alt="Prestige Group">
+      <img src="images/ksrtc-logo.png" alt="KSRTC"> -->
+      <img src="/image/68747470733a2f2f.png" alt="Sublime Media House">
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="video-section">
+    <h3>Watch How It Works</h3>
+    <video  autoplay >
+      <source  src="/image/3 BillingButton_OldNew .mp4"  type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Billing -->
+  <section class="billing-section">
+    <h3>Make Your Bill</h3>
+    <div class="billing-form">
+      <input type="text" id="itemName" placeholder="Item Name" />
+      <input type="number" id="itemPrice" placeholder="Price (₹)" />
+      <button onclick="addItem()">Add Item</button>
+    </div>
+    <div class="bill-output" id="billOutput">
+      No items added yet.
+    </div>
+  </section>
+
+  <script src="/js/poc.js">
+   
+  </script>
+
+</body>
+</html>

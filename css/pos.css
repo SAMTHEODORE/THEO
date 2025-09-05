@@ -1,0 +1,277 @@
+:root {
+      --primary-color: #c70039;
+      --blue-accent: #1a73e8;
+      --bg-light: #f5f7fa;
+      --text-dark: #1f2937;
+      --shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+
+    /* Header */
+    .header {
+      padding: 16px 8%;
+      background: white;
+      box-shadow: var(--shadow);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .header nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    .header nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .header nav a:hover {
+      color: var(--primary-color);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      font-size: 14px;
+      color: gray;
+      padding: 16px 8%;
+    }
+
+    .breadcrumb a {
+      color: #888;
+      text-decoration: none;
+    }
+
+    /* Hero */
+    .pos-hero {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      padding: 60px 8%;
+      background: white;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 14px;
+      border: 2px solid var(--blue-accent);
+      border-radius: 20px;
+      color: var(--blue-accent);
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .pos-content h1 {
+      font-size: 40px;
+      margin: 10px 0;
+    }
+
+    .highlight {
+      color: var(--blue-accent);
+    }
+
+    .pos-content p {
+      font-size: 18px;
+      margin: 10px 0 30px;
+      color: #555;
+    }
+
+    .download-btn {
+      padding: 14px 30px;
+      background: linear-gradient(45deg, var(--primary-color), var(--blue-accent));
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .pos-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    /* Features */
+    .features-list {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: #f0f4f8;
+      padding: 12px 16px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .feature-item:hover {
+      background: #e4ebf5;
+    }
+
+    .feature-item img {
+      width: 50px;
+    }
+
+    .feature-text {
+      font-weight: 500;
+    }
+
+    /* Trusted Logos */
+    .trusted-section {
+      padding: 60px 8%;
+      background-color: white;
+      text-align: center;
+    }
+
+    .trusted-section h3 {
+      margin-bottom: 30px;
+    }
+
+    .trusted-logos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .trusted-logos img {
+      max-height: 60px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+    }
+
+    .trusted-logos img:hover {
+      filter: grayscale(0%);
+    }
+
+    /* Video */
+    .video-section {
+      background: white;
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    .video-section video {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    /* Billing Section */
+    .billing-section {
+      background: white;
+      padding: 40px 8%;
+      max-width: 900px;
+      margin: 60px auto;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .billing-section h3 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .billing-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .billing-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .billing-form button {
+      padding: 10px 20px;
+      background: var(--blue-accent);
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .billing-form button:hover {
+      background: #0f5fd6;
+    }
+
+    .bill-output {
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+    }
+
+    .bill-output table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .bill-output th, .bill-output td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .bill-output th {
+      background: #eee;
+    }
+
+    .bill-output strong {
+      display: block;
+      text-align: right;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .billing-form {
+        flex-direction: column;
+      }
+      .billing-form input, .billing-form button {
+        width: 100%;
+      }
+    }

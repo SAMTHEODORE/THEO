@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/image/brosone.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OCR - Bros One Tech</title>
+<link rel="stylesheet" href="/css/ocr.css">
+<style>
+    
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🖹 OCR - Text Extraction</h1>
+    <p>Upload or drag & drop an image/PDF to extract text instantly</p>
+</header>
+
+<div class="ocr-container">
+    <label class="upload-box" for="fileInput" id="dropArea">
+        <p>📂 Click or Drop your file here</p>
+        <input type="file" id="fileInput" accept="image/*,.pdf" style="display:none">
+        <img id="preview" style="display:none">
+    </label>
+    <button class="btn" onclick="startOCR()">Extract Text</button>
+    <div class="loader" id="loader">⏳ Extracting text, please wait...</div>
+    <textarea id="ocrResult" placeholder="Extracted text will appear here..."></textarea>
+</div>
+
+<footer style="margin-top:40px; text-align:center; opacity:0.8;">
+    &copy; 2025 Bros One Tech. All Rights Reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
+<script src="/js/ocr.js">
+
+</script>
+
+</body>
+</html>

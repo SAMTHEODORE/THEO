@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+   <link rel="icon" href="/image/brosone.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Desktop — BROS</title>
+ <link rel="stylesheet" href="/css/business_desk.css">
+</head>
+<body>
+  <div class="desktop" id="desktop">
+    <div class="icons" id="icons">
+      <div class="icon" data-app="pos">
+        <div class="img">💳</div>
+        <p>POS</p>
+      </div>
+      <div class="icon" data-app="invoices">
+        <div class="img">📄</div>
+        <p>Invoices</p>
+      </div>
+      <div class="icon" data-app="customers">
+        <div class="img">👥</div>
+        <p>Customers</p>
+      </div>
+      <div class="icon" data-app="reports">
+        <div class="img">📊</div>
+        <p>Reports</p>
+      </div>
+    </div>
+
+    <!-- Example windows will be created dynamically -->
+
+    <!-- Start Menu -->
+    <div class="start-menu" id="startMenu">
+      <h4>Start</h4>
+      <div class="apps-grid">
+        <div class="start-app" data-app="pos">POS</div>
+        <div class="start-app" data-app="invoices">Invoices</div>
+        <div class="start-app" data-app="customers">Customers</div>
+        <div class="start-app" data-app="reports">Reports</div>
+      </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar" id="taskbar">
+      <div class="start" id="startBtn">☰</div>
+      <div class="task-icons" id="taskIcons"></div>
+      <div class="tray" id="tray">🕒 <span id="time">--:--</span></div>
+    </div>
+  </div>
+
+  <script src="/js/business_desk.js">
+    
+  </script>
+</body>
+</html>

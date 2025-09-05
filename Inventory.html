@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/image/brosone.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory - Bros One Tech</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/Inventory.css">
+<style>
+   
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Inventory Management</h1>
+    <p>Track and manage stock levels efficiently</p>
+</header>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search products..." onkeyup="searchTable()">
+</div>
+
+<div class="container">
+    <table id="inventoryTable">
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>SKU</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wireless Mouse</td>
+                <td>WM-001</td>
+                <td>150</td>
+                <td><span class="status in-stock">In Stock</span></td>
+            </tr>
+            <tr>
+                <td>Keyboard</td>
+                <td>KB-002</td>
+                <td>25</td>
+                <td><span class="status low-stock">Low Stock</span></td>
+            </tr>
+            <tr>
+                <td>Monitor 24"</td>
+                <td>MN-003</td>
+                <td>0</td>
+                <td><span class="status out-stock">Out of Stock</span></td>
+            </tr>
+            <tr>
+                <td>Laptop Stand</td>
+                <td>LS-004</td>
+                <td>75</td>
+                <td><span class="status in-stock">In Stock</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer>
+    &copy; 2025 Bros One Tech. All Rights Reserved.
+</footer>
+
+<script src="/js/Inventory.js">
+
+</script>
+
+</body>
+</html>

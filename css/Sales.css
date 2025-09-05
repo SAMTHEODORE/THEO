@@ -1,0 +1,93 @@
+body {
+        background: linear-gradient(135deg, #0a0f1e, #1e2a47);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+        color: #fff;
+    }
+
+    h1 {
+        text-align: center;
+        color: #ff9900;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .card {
+        max-width: 800px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255, 153, 0, 0.3);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .card.active {
+        box-shadow: 0 0 50px rgba(255, 153, 0, 1), 0 0 80px rgba(255, 153, 0, 0.8);
+        transform: scale(1.02);
+    }
+
+    .image {
+        overflow: hidden;
+    }
+
+    .image img {
+        width: 100%;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+
+    .card:hover .image img {
+        transform: scale(1.08);
+    }
+
+    .details {
+        padding: 20px;
+    }
+
+    .details h2 {
+        color: #ff9900;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .details p {
+        line-height: 1.6;
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .skills {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills li {
+        background: rgba(255, 153, 0, 0.1);
+        padding: 10px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 153, 0, 0.3);
+        transition: 0.3s ease;
+    }
+
+    .skills li:hover {
+        background: rgba(255, 153, 0, 0.2);
+        transform: translateX(5px);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 1.5rem;
+        }
+        .details h2 {
+            font-size: 1.2rem;
+        }
+        .details p, .skills li {
+            font-size: 0.9rem;
+        }
+    }

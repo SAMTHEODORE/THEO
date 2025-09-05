@@ -1,0 +1,106 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #ff4c4c, #ff884c);
+        color: #fff;
+        text-align: center;
+    }
+
+    header {
+        padding: 50px 20px 20px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .pricing-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1100px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .price-card {
+        background: #fff;
+        color: #333;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .price-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+    }
+
+    .price-card h2 {
+        color: #ff4c4c;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #ff4c4c;
+    }
+
+    ul {
+        list-style: none;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background: #ff4c4c;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #ff884c;
+    }
+
+    footer {
+        margin-top: 12%;
+        padding: 15px;
+        background: rgba(0,0,0,0.2);
+        font-size: 0.9rem;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }

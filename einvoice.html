@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/image/brosone.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Invoice - Bros One Tech</title>
+<link rel="stylesheet" href="/css/einvoice.css">
+<style>
+    
+</style>
+</head>
+<body>
+
+<header>
+    <h1>E-Invoice</h1>
+    <p>Instantly generate and download your electronic invoice</p>
+</header>
+
+<div class="invoice-container" id="invoice">
+    <div class="invoice-header">
+        <div>
+            <h2>Bros One Tech</h2>
+            <p>65, Block No 2, Plot No B,<br> Ponnan Kinaru St, Rajiv Gandhi Nagar, <br>Villivakkam,<br> Chennai, Tamil Nadu 600049</p>
+        </div>
+        <div>
+            <p><strong>Invoice #: </strong>INV-1001</p>
+            <p><strong>Date: </strong><span id="invoice-date"></span></p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>POS Software License</td>
+                <td>1</td>
+                <td>₹15,000</td>
+                <td>₹15,000</td>
+            </tr>
+            <tr>
+                <td>Installation & Setup</td>
+                <td>1</td>
+                <td>₹5,000</td>
+                <td>₹5,000</td>
+            </tr>
+            <tr>
+                <td>Annual Support</td>
+                <td>1</td>
+                <td>₹3,000</td>
+                <td>₹3,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="invoice-total">
+        Grand Total: ₹23,000
+    </div>
+</div>
+
+<div style="text-align:center;margin-bottom:30px;">
+    <a href="#" class="btn-download" onclick="downloadInvoice()">Download Invoice</a>
+</div>
+
+<footer>
+    &copy; 2025 Bros One Tech. All Rights Reserved.
+</footer>
+
+<script src="/js/einvoice.js">
+   
+</script>
+
+</body>
+</html>
